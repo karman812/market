@@ -1,0 +1,13 @@
+.tenth-page {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+    .logo-block {
+        filter: invert(49%) sepia(91%) saturate(1663%) hue-rotate(137deg) brightness(91%) contrast(101%);
+
+        @media screen and (max-width: 700px) {
+            width: 90%;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.second-page {
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 50px 150px;
+
+        .article-text {
+            font-size: 18px;
+            color: rgb(145, 145, 145);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 32px;
+            text-align: left;
+            width: 45%;
+
+            @media screen and (max-width: 1100px) {
+                line-height: 28px;
+                font-size: 15px;
+            }
+
+            @media screen and (max-width: 700px) {
+                width: 100%;
+                order: 2;
+            }
+        }
+
+        .article-icon {
+            width: 55%;
+
+            .chess-pic {
+                width: 100%;
+            }
+
+            @media screen and (max-width: 700px) {
+                width: 100%;
+                order: 1;
+            }
+        }
+
+        @media screen and (max-width: 1100px) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @media screen and (max-width: 700px) {
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 1100px) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+    }
+
+    .even-item {
+        background-color: rgba(182, 181, 181, 0.226);
+
+        .article-text {
+            color: rgb(110, 110, 110);
+        }
+    }
+}
